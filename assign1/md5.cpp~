@@ -98,6 +98,9 @@ void loop(unsigned int *group, int sub_loop_num) {
 				case 0:
 					for (int i = 0; i < 16; i++) {
 						int sub_num = sub_loop_num*16 + i;
+						//cout << hex << *q[0] << " " << *q[1] << " " << *q[2] << " " << *q[3] << endl;
+						//cout << hex << *(group+sub[sub_num]) << '\t';
+						//cout << hex << *(group+sub[sub_num]) << '\t';
 						FF(q[0], q[1], q[2], q[3], *(group+sub[sub_num]), s[sub_num], t[sub_num]);
 						q.insert(q.begin(), q.back());
 						q.pop_back();
