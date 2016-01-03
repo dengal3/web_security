@@ -13,8 +13,9 @@
 #include <string.h>
 
 void main() {
-    char password[3];
     int access;
+    char password[3];
+
     while (1) {
         access = 0;
         scanf("%s", password);
